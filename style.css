@@ -1,0 +1,35 @@
+.container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas: "ghibliImage" "messages";
+    gap: 5px;
+    padding: 5px;
+    justify-content: center;
+}
+
+img{
+    width: 250px;
+}
+
+#question1{
+    width: 250px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.messageField{
+    display: flex;
+    background-color: g;
+    width: 250px;
+}
+
+#button1 {
+    width: 250px;
+    height: 25px;
+}
+
+#button2 {
+    width: 250px;
+    height: 25px;
+}

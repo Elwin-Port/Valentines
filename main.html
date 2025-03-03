@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Happy Valentines</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>Welcome to My Website</main>
+        <div class="container">
+            <div class="ghibli"> <img src="https://i.pinimg.com/originals/44/8b/c5/448bc5af6565970bb722734dd5ae93b4.gif" id="pandaGhibli" onclick="button1()" alt="panda"></div>
+            <div id="question1">Hi Cutie :) I have a question!</div>
+            <div class="messageField">
+                <div id="button1"><button onclick="button1()">Yes</button></div>
+                <div id="button2"><button onclick="button2()">Leave me alone</button></div>
+            </div>
+        </div>
+
+        <script>
+            function button1() {
+                var x = document.getElementById("question1");
+                if (x.innerHTML === "Hi Cutie :) I have a question!") {
+                    x.innerHTML = "Will you be my Valentine??"
+                } else if (x.innerHTML === "Will you be my Valentine??") {
+                    x.innerHTML = "OMG REALLY?!?!?!Yayyy!! I love you baby <3";
+                } else {
+                    x.innerHTML = "Hi Cutie :) I have a question!"
+                }
+
+            }
+
+            function button2() {
+                var y = document.getElementById("question1");
+                if (y.innerHTML === "Hi Cutie :) I have a question!") {
+                    y.innerHTML = "Oh :'( ok "
+                } else if (y.innerHTML === "Will you be my Valentine??") {
+                    y.innerHTML = "WRONG!! You meant YES! <3 ";
+                } else {
+                    y.innerHTML = "Hi Cutie :) I have a question!"
+                }
+            }
+
+        </script>
+
+        
+    </body>
+</html>
